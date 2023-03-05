@@ -88,10 +88,13 @@ $background-color:rgb(61, 187, 228);
         height: 90vh;
         width: 50vw;
         display: flex;
+        border: 80px solid $background-color;
+        background-color: #231c1c;
+        color: #fff;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-
+        // font-size: 30px;
 
         @media(max-width: 576px) {
             display: none;
@@ -148,7 +151,7 @@ $background-color:rgb(61, 187, 228);
     height: auto;
     // width: 100;
     display: flex;
-    // background-color: black;
+    background-color: #231c1c;
 
 //yam media query
     @media (max-width: 576px) {
@@ -159,6 +162,7 @@ $background-color:rgb(61, 187, 228);
     .left {
         width: 100%;
         display: flex;
+        color: #fff;
         
         @media (max-width: 576px) {
             width: 100% ;
@@ -224,30 +228,19 @@ $background-color:rgb(61, 187, 228);
                         }
                     }
 
-                    .style {
-                        display: flex;
-                        width: 100%;
-                        margin: 20px;
-                        padding: 10px;
-
-
-                        input [type="checkbox"] {
-                            width: 100%;
-                            height: 3vh;
-                        }
-                    }
-
-
                     .btn{
                     //    display: block;
                         width: 100%;
-                        height: 35px;
-                        border-radius: 15px 0;
+                        height: 50px;
+                        border-radius: 15px;
                         border: none;
-                        box-shadow: 3px 3px 3px grey;
+                        font-size: 25px;
+                        background-color: $background-color;
+                        box-shadow: 3px 3px 3px #fff;
                         // margin-top: 30px;
 
                        @media (max-width: 576px) {
+                           width: 100%;
                            display: flex;
                            text-align: center;
                            justify-content: center;
@@ -258,15 +251,20 @@ $background-color:rgb(61, 187, 228);
 
 
                         &:hover{
-                            background-color: #101010;
-                            color: #fff;
+                            background-color: #fff;
+                            color: #101010;
+
+                            @media (max-width: 576px) {
+                                background-color: #101010;
+                                color: #fff;
+                            }
                         }
                     }
         }   
     }
     .right {
         width: 100%;
-        height: 90vh;
+        height: 50vh;
         align-items: center;
 
 
@@ -285,7 +283,7 @@ $background-color:rgb(61, 187, 228);
 
 footer {
     width: 100%;
-    height: 10vh;
+    height: 8vh;
     font-size: 20px;
     justify-content: center;
     text-align: center;
